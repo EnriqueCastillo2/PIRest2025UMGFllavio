@@ -29,10 +29,8 @@ app.get("/", (req, res) => {
   res.json({ message: "UMG Web Application" });
 });
 
-require("./app/routes/cliente.routes.js")(app);
-require("./app/routes/producto.routes.js")(app);
-require("./app/routes/pedido.routes.js")(app);
-require("./app/routes/detallePedido.routes.js")(app);
+require("./app/routes/comentario.routes.js")(app);
+
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
